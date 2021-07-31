@@ -1,0 +1,53 @@
+﻿@model LeaveManagement.Models.CreateLeaveAllocationVM
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Name)*@
+                LeaveTypes
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.DefaultDays)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateCreated)
+            </th>*@
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.LeaveTypes) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.DefaultDays)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCreated)
+            </td>*@
+            <td>
+                @*<a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |*@
+                @*<a asp-action="Details" asp-route-id="@item.ID">Details</a> |*@
+                @*<a asp-action="Delete" asp-route-id="@item.ID">Delete</a>*@
+                @*@Html.ActionLink("Allocate To Employees", "SetLeave", "LeaveAllocation",new {id= item.ID })*@
+                <a class="btn btn-outline-success" asp-action="SetLeave" asp-route-id="@item.ID">
+                    Allocate To Employees
+                </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

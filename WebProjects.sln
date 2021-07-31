@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SchoolManagementSystem", "SchoolManagementSystem", "{19ED7A8F-2DF6-4A8D-A982-7758135C117A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeaveManagementSystem", "LeaveManagementSystem", "{010974CD-D11A-4514-B290-0631CFD4D640}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrevoirWilliams", "TrevoirWilliams", "{6032582B-88D1-45B0-8613-264B83E2F467}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement", "LeaveManagement\LeaveManagement.csproj", "{294EDEC6-AD03-4A3B-967A-134C61742A99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{294EDEC6-AD03-4A3B-967A-134C61742A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294EDEC6-AD03-4A3B-967A-134C61742A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294EDEC6-AD03-4A3B-967A-134C61742A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294EDEC6-AD03-4A3B-967A-134C61742A99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19ED7A8F-2DF6-4A8D-A982-7758135C117A} = {6032582B-88D1-45B0-8613-264B83E2F467}
+		{010974CD-D11A-4514-B290-0631CFD4D640} = {6032582B-88D1-45B0-8613-264B83E2F467}
+		{294EDEC6-AD03-4A3B-967A-134C61742A99} = {010974CD-D11A-4514-B290-0631CFD4D640}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9BCB9B1-A8D9-4B3F-B824-2A38EB55F14B}
+	EndGlobalSection
+EndGlobal
